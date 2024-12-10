@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Previous Trees</title>
+</head>
+<body>
+    <h1>Previous Trees</h1>
+    <ul>
+        <li th:each="tree : ${trees}">
+            <pre th:text="${tree.treeJson}"></pre>
+        </li>
+    </ul>
+    <a href="/enter-numbers">Enter more numbers</a>
+</body>
+</html>
